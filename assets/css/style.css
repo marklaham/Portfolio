@@ -2,6 +2,7 @@
     box-sizing: border-box;
   }
 
+/*Header styling */ 
 header {
     background-color: #1D88E5;
     text-align: right;
@@ -9,52 +10,54 @@ header {
     height: 100px;
     padding: 10px;
     border: 1px solid white;
-  }
-
-/*  body {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-  }
+}
   
-*/
 
+/*h1 tag */ 
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+   
+}
+
+/*navigation bar style */ 
 nav {
     display:flex-end;
-    padding 5px;
+    padding 10px;
     justify-content: flex-end;
     flex-wrap:wrap;
    
   }
   
-  nav a {
+/*link on the navigation bar style */ 
+nav a {
     color: #b9C6ae;
     font-weight: bold;
+    font-size: 24px;
     text-decoration: none;
-  }
+    padding: 15px;
+    padding-top: 30px;
+    
+}
   
-  nav a:hover {
+/*When you hover over the nav links */ 
+nav a:hover {
     color: #fff;
-  }
+}
 
-  main {
+/*some styling for the main section*/ 
+main {
   
     background-color: white;
     /*width: 700px;
     height: 400px;*/
     padding: 10px;
     border: 1px solid white;
-  } 
+} 
   
-  img{
-    width:30%;
-    height: 30%;
-  }
 
-
-  .container {
+/*STyling for the main container that goes between the header and footer*/ 
+.container {
     display: flex;
     flex-wrap: wrap;
     margin-top:0%;
@@ -63,23 +66,27 @@ nav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.25em;
     
-  }
+}
 
-  .aboutMeSection{
+/*The styling for the titles on the left column */ 
+.aboutMeSection{
     display:inline-flex;
       width: 100%;
       height: 100%;
       padding: 20px;
 
-  }
-  .sectionTitle {
+}
+
+/**/ 
+.sectionTitle {
     width: 20%;
     border-right: royalblue;
     border-right-style: solid;
     border-right-width: 5px;
     min-width: 200px;
-  }
+}
 
+/*styling for the about me paragraph section*/ 
 .blurb{
     text-align: left;
     padding: 30px;
@@ -87,6 +94,7 @@ nav {
     width: 80%;
 }
 
+/*Covering the software links in the main section*/ 
 .projects {
     flex: 4;
     background-color: #fff;
@@ -98,8 +106,10 @@ nav {
     min-height: 600px;
 
     align-items: flex-start;
- }
- .mainCard {
+}
+
+/*THis is for the first software link that gets showcased*/ 
+.mainCard {
     width: 100%;
     height: 50%;
     display:flex;
@@ -110,10 +120,13 @@ nav {
     padding: 10px;
     margin: 20px;
     border-color: black;
+    box-shadow: 10px 10px 5px #aaaaaa;
     background-image: url("https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/dogs_1280p_0.jpg?itok=6jQzdNB8");
     background-size: cover;
     background-position: center;
- }
+}
+
+
 /* div.projects section:nth-of-type(1) {
    background-image: url("https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/dogs_1280p_0.jpg?itok=6jQzdNB8");
 
@@ -128,77 +141,80 @@ nav {
     margin: 20px;
     border-color: black;
     box-shadow: 10px 10px 5px #aaaaaa;
-   background-image: url("https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/dogs_1280p_0.jpg?itok=6jQzdNB8");
- background-size: cover;
- background-position: center;
+    background-image: url("https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/dogs_1280p_0.jpg?itok=6jQzdNB8");
+    background-size: cover;
+    background-position: center;
+    min-height: 105px;
   }
+
+/*THe buttons that link to the software*/ 
+.softwareLinks{
   
-  footer {
+    color: royalblue;
+    text-decoration-color: seashell;
+    border-radius: 20px;
+    align-self: flex-start;
+}
+  
+/*the main styling for the footer*/ 
+footer {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #1D88E5;
     width: 100%;
-    height: 100px;
     padding: 10px;
     border: 1px solid white;
-  }
+    bottom: 0;
+    padding: 20px;
+    text-align: left;
+    margin-top: auto;
+   
+}
+
+/*The styling for the list setup in the footer*/ 
+footer ul li {
+      
+      display: inline;
+      padding: 30px;  
+      font-size: 24px;
+}
+
+
+/*styling for the actual links in the footer*/ 
+.contactInfo {
+    display:inline;
+    align-content:space-between;
+    text-align: center;
+    width: 80%;
+    color: #b9C6ae;
+    text-decoration: none;
+    padding: 15px;
+   
+    padding-right: 40px;
+}
   
-  @media screen and (max-width: 992px) {
+
+/*when screen is bigger */ 
+@media screen and (max-width: 992px) {
     .container, 
     .projects,
     .card {
         flex-direction: row;
     }
-  }
+    
+}
 
-  @media screen and (max-width: 768px) {
+/*when screen gets smaller then 768px then realign stuff in a column */ 
+@media screen and (max-width: 768px) {
     .container, 
     .projects,
-    .card {
+    .card,
+    nav {
       flex-direction:column;
     }
-  }
-
-/*
-
-
-  
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-
-  }
-  
-  footer {
-    width: 100%;
-    bottom: 0;
-    padding: 20px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
-    margin-top: auto;
-  }
-  
-.card > header {
-    border-radius: 50px 50px 0px 0px;
-    padding: 20px;
-  }
-  */
- 
-  
-  /** 
-  
-  .card > p {
-    text-align: center;
-  }
-  
-  .card > img {
-    width: 100%;
-  } */
+    .contactInfo{
+        display:block;
+    }
+}
   
   
