@@ -14,6 +14,5 @@ https://marklaham.github.io/Portfolio
 Screen shot of deployed site:
 
 
-(took screen shots of application but could not figure out how to insert/paste it into here)
 
-
+![Getting Started](./assets/ScreenshotPortfolio.png) 
