@@ -1,4 +1,4 @@
-# Portfolio
+# 1. Portfolio
 A collection of my work 
 
 Description:
@@ -15,3 +15,5 @@ Screen shot of deployed site:
 
 
 (took screen shots of application but could not figure out how to insert/paste it into here)
+
+
